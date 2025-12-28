@@ -4,12 +4,14 @@ This project analyzes the Enron email dataset using two main approaches:
 
 1. RAG (Retrieval-Augmented Generation): Allows users to ask questions and retrieve relevant emails.
 2. Graph Analysis (Neo4j): Shows email communication networks and risky senders.
+
 Folder Structure
 data/: Raw and processed data
 processed/: Cleaned and scored datasets
 reports/: Evaluation outputs
 src/: Python source code
 notebooks/: Optional notebooks
+lib/: Helper files
 
 Main Scripts
 01_clean_emails.py – Cleans email data
