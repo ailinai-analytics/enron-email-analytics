@@ -1,23 +1,4 @@
 
-To fix it **so it looks good everywhere (VS Code + GitHub)** do these two things:
-
----
-
-## 1) Fix VS Code preview (fastest)
-
-### Option A (Best): Change preview theme
-
-* Open `README.md`
-* Press **Cmd+Shift+P**
-* Type: **Markdown: Open Preview**
-* Then open **Settings** → search: **Markdown Preview Theme**
-* Set it to: **Light** (or “GitHub Light” if available)
-
-### Option B: Use GitHub-style preview
-
-Install extension:
-
-* **Markdown Preview GitHub Styling**
 
  Enron Email Analyzer (RAG + Neo4j)
 
