@@ -1,0 +1,18 @@
+# secrets
+.env
+
+# python
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# editors
+.vscode/
+.streamlit/
+
+# generated outputs
+pyvis_graph.html
+
+# data folders (don't push)
+data/
