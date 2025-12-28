@@ -1,64 +1,78 @@
 # Enron Email Analyzer (RAG + Neo4j)
 
 ## Project Overview
-This project analyzes the Enron email dataset using two main approaches:
+This project analyzes the Enron email dataset using Retrieval-Augmented Generation (RAG) and Graph Analysis (Neo4j) to identify risky emails, explore communication networks, and enable semantic search over email content.
 
-- **RAG (Retrieval-Augmented Generation)** for semantic email search  
-- **Graph Analysis (Neo4j)** for communication network and risk analysis  
+The system supports risk scoring, graph-based analysis, semantic search using FAISS, and an interactive Streamlit dashboard.
 
-The system combines text analytics, vector search, and graph databases with a Streamlit UI.
-
----
+## Key Features
+- Risk scoring based on sensitive keywords and communication patterns
+- Graph analysis using Neo4j to visualize sender–receiver networks
+- RAG pipeline for semantic search and question answering
+- Streamlit UI for interactive exploration
 
 ## Folder Structure
-
-data/
-raw/ Raw Enron email data
-processed/ Cleaned and scored datasets
-final/ Final exports (top2000.csv / parquet)
-rag/index/ FAISS index and metadata
-
-reports/
-eval_rag_results.csv
-
-src/
-01_clean_emails.py
-02_score_risk.py
-03_export_top2000.py
-04_make_rag_dataset.py
-05_chunk_emails.py
-06_build_vector_index.py
-07_load_neo4j.py
-08_rag_search.py
-09_router_agent.py
-10_app_streamlit.py
-11_eval_rag.py
-
-notebooks/
-
----
+data/        - Raw data and final exports (e.g., top2000.csv/parquet)  
+processed/   - Cleaned and scored datasets  
+reports/     - Evaluation outputs (e.g., eval_rag_results.csv)  
+src/         - Python scripts (pipeline + Streamlit app)  
+notebooks/   - Optional notebooks  
+lib/         - Helper files (UI / visualization assets)
 
 ## Main Scripts
+- src/01_clean_emails.py — Cleans raw email data  
+- src/02_score_risk.py — Adds risk_score and comm_score  
+- src/03_export_top2000.py — Exports top risky emails  
+- src/04_make_rag_dataset.py — Prepares RAG metadata  
+- src/05_chunk_emails.py — Splits email text into chunks  
+- src/06_build_vector_index.py — Builds FAISS vector index  
+- src/07_load_neo4j.py — Loads email graph into Neo4j  
+- src/08_rag_search.py — Semantic search logic  
+- src/09_router_agent.py — Routes queries (RAG vs Graph)  
+- src/10_app_streamlit.py — Streamlit application  
+- src/11_eval_rag.py — Evaluation and latency analysis  
 
-- `01_clean_emails.py` — Cleans raw email data  
-- `02_score_risk.py` — Adds `risk_score` and `comm_score`  
-- `03_export_top2000.py` — Selects top risky emails  
-- `04_make_rag_dataset.py` — Builds RAG metadata  
-- `05_chunk_emails.py` — Splits emails into chunks  
-- `06_build_vector_index.py` — Builds FAISS index  
-- `07_load_neo4j.py` — Loads data into Neo4j  
-- `08_rag_search.py` — Semantic search  
-- `09_router_agent.py` — Routes queries (Graph vs RAG)  
-- `10_app_streamlit.py` — Streamlit application  
-- `11_eval_rag.py` — Evaluation script  
+## Setup Instructions
 
----
+### 1. Clone the repository
+git clone https://github.com/AilinShamsaie/enron-email-analytics.git  
+cd enron-email-analytics
 
-## How to Run
-
-### Step 1: Create virtual environment
-```bash
-python -m venv .venv
+### 2. Create virtual environment
+python -m venv .venv  
 source .venv/bin/activate
+
+### 3. Install dependencies
 pip install -r requirements.txt
-reports/eval_rag_results.csv
+
+### 4. Configure environment variables
+Create a .env file in the project root:
+NEO4J_URI=bolt://<your-uri>  
+NEO4J_USER=neo4j  
+NEO4J_PASSWORD=<your-password>
+
+## Run the Pipeline (Optional)
+python src/01_clean_emails.py  
+python src/02_score_risk.py  
+python src/03_export_top2000.py  
+python src/04_make_rag_dataset.py  
+python src/05_chunk_emails.py  
+python src/06_build_vector_index.py  
+python src/07_load_neo4j.py  
+
+## Run the Application
+streamlit run src/10_app_streamlit.py
+
+## Evaluation Output
+Evaluation results are saved in:
+reports/eval_rag_results.csv  
+This file contains query text, latency, and top retrieved results.
+
+## Tech Stack
+- Python
+- SentenceTransformers + FAISS
+- Neo4j
+- Streamlit
+- Pandas
+
+
