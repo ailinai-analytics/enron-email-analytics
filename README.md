@@ -3,13 +3,16 @@
 ## Project Overview
 This project analyzes the Enron email dataset using two main approaches:
 
-1. **RAG (Retrieval-Augmented Generation)**  
-   Allows users to ask questions and retrieve relevant emails.
+- **RAG (Retrieval-Augmented Generation)** for semantic email search  
+- **Graph Analysis (Neo4j)** for communication network and risk analysis  
 
-2. **Graph Analysis (Neo4j)**  
-   Shows email communication networks and risky senders.
+The system combines text analytics, vector search, and graph databases with a Streamlit UI.
+
+---
 
 ## Folder Structure
+
+
 
 
 Enron Email Analyzer (RAG + Neo4j)
