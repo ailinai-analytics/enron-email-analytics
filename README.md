@@ -16,8 +16,7 @@ data/        - Raw data and final exports (e.g., top2000.csv/parquet)
 processed/   - Cleaned and scored datasets  
 reports/     - Evaluation outputs (e.g., eval_rag_results.csv)  
 src/         - Python scripts (pipeline + Streamlit app)  
-notebooks/   - Optional notebooks  
-lib/         - Helper files (UI / visualization assets)
+notebooks/   - Optional notebooks 
 
 ## Main Scripts
 - src/01_clean_emails.py — Cleans raw email data  
