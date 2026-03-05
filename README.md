@@ -73,6 +73,12 @@ This file contains query text, latency, and top retrieved results.
 - Neo4j
 - Streamlit
 - Pandas
-<video width="800" controls>
-  <source src="enron_demo_2.mp4" type="video/mp4">
-</video>
+<div style="text-align:center;">
+<iframe width="800" height="450"
+src="https://www.youtube.com/embed/K5n16d47QB4?rel=0&modestbranding=1&controls=1"
+title="Demo Video"
+frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen>
+</iframe>
+</div>
