@@ -74,7 +74,7 @@ This file contains query text, latency, and top retrieved results.
 - Streamlit
 - Pandas
 <iframe width="800" height="450"
-src="https://www.youtube.com/embed/K5n16d47QB4?rel=0&modestbranding=1&end=35"
+src="https://www.youtube.com/embed/K5n16d47QB4?rel=0&modestbranding=1&end=37"
 title="Demo Video"
 frameborder="0"
 allowfullscreen>
