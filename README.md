@@ -73,8 +73,13 @@ This file contains query text, latency, and top retrieved results.
 - Neo4j
 - Streamlit
 - Pandas
-## 🎥 Demo Video (36 seconds)
+## Demo Video
 
-Click the image to watch the demo.
+<iframe width="800" height="450"
+src="https://www.youtube.com/embed/K5n16d47QB4?rel=0&modestbranding=1&controls=1&showinfo=0"
+title="Demo Video"
+frameborder="0"
+allowfullscreen>
+</iframe>
 
-[![Watch the demo](https://img.youtube.com/vi/K5n16d47QB4/maxresdefault.jpg)](https://youtu.be/K5n16d47QB4)
+Note: The demo video is hosted on YouTube. YouTube may show recommended videos at the end automatically.
