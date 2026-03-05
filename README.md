@@ -73,12 +73,9 @@ This file contains query text, latency, and top retrieved results.
 - Neo4j
 - Streamlit
 - Pandas
-<div style="text-align:center;">
 <iframe width="800" height="450"
-src="https://www.youtube.com/embed/K5n16d47QB4?rel=0&modestbranding=1&controls=1"
+src="https://www.youtube.com/embed/K5n16d47QB4?rel=0&modestbranding=1&end=35"
 title="Demo Video"
 frameborder="0"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 allowfullscreen>
 </iframe>
-</div>
