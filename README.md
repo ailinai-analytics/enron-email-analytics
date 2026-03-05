@@ -73,8 +73,9 @@ This file contains query text, latency, and top retrieved results.
 - Neo4j
 - Streamlit
 - Pandas
- ## 🎥 Demo Video
-
-A short demo showcasing the Streamlit dashboard, RAG-based semantic search, and Neo4j-powered network analysis.
-
-[![Demo Video](https://img.youtube.com/vi/K5n16d47QB4/maxresdefault.jpg)](https://youtu.be/K5n16d47QB4)
+ <iframe width="800" height="450"
+src="https://www.youtube.com/embed/K5n16d47QB4?rel=0"
+title="Demo Video"
+frameborder="0"
+allowfullscreen>
+</iframe>
