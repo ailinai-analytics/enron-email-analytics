@@ -77,4 +77,7 @@ This file contains query text, latency, and top retrieved results.
 A short demo showcasing the Streamlit dashboard, RAG-based semantic search, and Neo4j-powered network analysis.
 
 https://youtu.be/K5n16d47QB4
+## 🎥 Demo Video
+
+[![Watch the demo](https://img.youtube.com/vi/K5n16d47QB4/maxresdefault.jpg)](https://youtu.be/K5n16d47QB4)
 
